@@ -1,0 +1,90 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Portfolio Website Design</title>
+        <link rel="stylesheet" href="tax.css">
+        <!----Font awesome cdn  font icon css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    </head>
+    <body>
+         <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class="logo">
+                       
+                        <div class="logo-text"> Madhavaram Devanand Rao</div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </nav>
+                </header>
+                <div class="container">
+                     <div class="hero-text">
+                        <h5>Hi My Other Projects Are  <span class="input"></span></h5>
+                        <h1>'Weather_Wave'</h1>
+                        <br>
+                        <br>
+                        <p> 'Weather Wave' is a sleek, modern weather application that provides users with real-time weather updates and detailed forecasts. The app seamlessly integrates with external weather APIs to deliver accurate weather information for any location.
+                             <br>
+                             <br>
+                            Features:
+                            <br>
+                            <br>
+                            Real-Time Weather Data: The app allows users to view current weather conditions, including temperature, humidity, wind speed, and atmospheric pressure for their current location or any location of their choice.<br><br>
+                            Forecast Information: It offers detailed weather forecasts for the coming days, enabling users to plan ahead based on accurate predictions.<br><br>
+                            Location-Based Services: By leveraging GPS or allowing manual location input, 'Weather Wave' delivers weather updates tailored to the user's specific location.<br><br>
+                            User-Friendly UI: The interface is attractive and easy to navigate, ensuring a smooth user experience. It was built using XML and optimized for use across different devices.<br><br>
+                            Customizable Themes: Users can personalize their experience with various themes and color schemes, enhancing the visual appeal of the app.
+                            <br>
+                            <br>
+                            Technology Stack:
+                            <br>
+                            <br>
+                            Backend:
+                            <br>
+                            <br>
+                            Developed using Kotlin, ensuring robust performance and seamless integration with external weather APIs.
+                            <br>
+                            <br>
+                            Frontend: 
+                            <br>
+                            <br>
+                            The user interface is crafted using XML, following modern design principles for a responsive layout.<br><br><br><br>
+                        </p>
+                            
+                        
+    
+                     </div>
+                </div>
+            </div>
+         </div>
+         <!---typed js for typing text effect-->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+         <script>
+            /** creating button click show hide navbar **/
+            var togglebtn=document.querySelector(".togglebtn");
+            var nav=document.querySelector(".navlinks");
+            var links=document.querySelector(".navlinks li");
+    
+            togglebtn.addEventListener("click", function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            })
+    
+            var typed=new Typed(".input",{
+                strings:[" WebToApp"," Tax_Trek"," Box_Cricket_Fever"],
+                typedSpeed:65,
+                backSpeed:55,
+                loop:true
+            })
+    
+         </script>
+    </body>
+    </html>

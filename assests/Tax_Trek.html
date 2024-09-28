@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="tax.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    =
+                    <div class="logo-text"> Madhavaram Devanand Rao</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-text">
+                    <h5>Hi My Other Projects Are  <span class="input"></span></h5>
+                    <h1>'Tax Trek'</h1>
+                    <br>
+                    <br>
+                    <p> 'Tax Trek' is a user-friendly income tax calculator app aimed at simplifying tax calculations for individuals, allowing them to understand their tax liabilities with ease.
+                         <br>
+                         <br>
+                        Features:
+                        <br>
+                        <br>
+                        User Input: Users can input essential information such as name, age, and total income. This data forms the basis of tax calculations, making the app easy for anyone to use.<br><br>
+                        Deduction Options: The app provides options to include deductions, helping users lower their taxable income. It includes a dedicated button that links directly to the official income tax website, ensuring users have access to up-to-date information on allowable deductions.<br><br>
+                        Tax Calculation: After entering the necessary information, the app calculates the total taxable income and provides an accurate tax amount. This feature saves users time and ensures accuracy.<br><br>
+                        Responsive UI: The app features an intuitive user interface designed in XML, optimized for a seamless experience across different Android devices.
+                        <br>
+                        <br>
+                        Technology Stack:
+                        <br>
+                        <br>
+                        Backend:
+                        <br>
+                        <br>
+                         Developed entirely in Kotlin, which ensures efficient and reliable performance.
+                        <br>
+                        <br>
+                        Frontend: 
+                        <br>
+                        <br>
+                        The UI is built with XML, adhering to modern design principles to create an engaging and easy-to-navigate user experience.<br><br><br><br>
+                    </p>
+                        
+                    
+
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:[" WebToApp"," WeatherWave"," Box_Cricket_Fever"],
+            typedSpeed:65,
+            backSpeed:55,
+            loop:true
+        })
+
+     </script>
+</body>
+</html>

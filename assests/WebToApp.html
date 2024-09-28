@@ -1,0 +1,95 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Portfolio Website Design</title>
+        <link rel="stylesheet" href="tax.css">
+        <!----Font awesome cdn  font icon css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    </head>
+    <body>
+         <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class="logo">
+                        
+                        <div class="logo-text"> Madhavaram Devanand Rao</div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </nav>
+                </header>
+                <div class="container">
+                     <div class="hero-text">
+                        <h5>Hi My Other Projects Are  <span class="input"></span></h5>
+                        <h1>'WebToApp'</h1>
+                        <br>
+                        <br>
+                        <p> This web-based Android application integrates web content with real-time notifications and location services to enhance the user's experience. It's a versatile tool that merges browsing with dynamic features like push notifications.
+                             <br>
+                             <br>
+                            Features:
+                            <br>
+                            <br>
+                            WebView Integration: Displays web content within the app, allowing users to browse external URLs without leaving the application.<br><br>
+                            Real-Time Notifications: Implements Firebase Cloud Messaging (FCM) to send timely push notifications, keeping users informed about updates and new content.<br><br>
+                            Location-Based Services: Utilizes GPS to provide customized content based on the user's current location, ensuring relevance and better engagement.<br><br>
+                            User-Friendly UI: Features a clean, responsive interface, designed in XML, to ensure easy navigation across all Android devices.
+                            <br>
+                            <br>
+                            Technology Stack:
+                            <br>
+                            <br>
+                            Backend:
+                            <br>
+                            <br>
+                            Developed using Kotlin, ensuring efficient performance and seamless integration with Firebase services.
+                            <br>
+                            <br>
+                            Firebase Integration:
+                            <br>
+                            <br>
+                            Leveraged Firebase for real-time cloud messaging, analytics, and user authentication, enhancing the app’s dynamic features.
+                            <br>
+                            <br>
+                            Frontend: 
+                            <br>
+                            <br>
+                            The UI is built using XML, following modern design principles for a visually appealing and easy-to-navigate experience.
+<br><br><br><br>
+                        </p>
+                        
+    
+                     </div>
+                </div>
+            </div>
+         </div>
+         <!---typed js for typing text effect-->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+         <script>
+            /** creating button click show hide navbar **/
+            var togglebtn=document.querySelector(".togglebtn");
+            var nav=document.querySelector(".navlinks");
+            var links=document.querySelector(".navlinks li");
+    
+            togglebtn.addEventListener("click", function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            })
+    
+            var typed=new Typed(".input",{
+                strings:[" Weather_Wave"," Tax_Trek"," Box_Cricket_Fever"],
+                typedSpeed:65,
+                backSpeed:55,
+                loop:true
+            })
+    
+         </script>
+    </body>
+    </html>

@@ -1,0 +1,89 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Portfolio Website Design</title>
+        <link rel="stylesheet" href="tax.css">
+        <!----Font awesome cdn  font icon css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    </head>
+    <body>
+         <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class="logo">
+                        
+                        <div class="logo-text"> Madhavaram Devanand Rao</div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </nav>
+                </header>
+                <div class="container">
+                     <div class="hero-text">
+                        <h5>Hi My Other Projects Are  <span class="input"></span></h5>
+                        <h1>'Box_Cricket_Fever'</h1>
+                        <br>
+                        <br>
+                        <p> The 'Box_Cricket_Fever' is an app designed specifically for managing and tracking scores in box cricket matches. It offers a comprehensive solution for scorekeeping, including features to enter different runs, record outs, and manage team performance in real-time.
+                             <br>
+                             <br>
+                            Features:
+                            <br>
+                            <br>
+                            Score Entry Options: Users can input scores such as 1, 2, 3, 4, 5, or 6 runs, making it versatile for different cricketing scenarios. The app also has options for recording wickets taken or batsmen getting out.<br><br>
+                            Live Tracking: The app provides live score tracking for each side, updating in real-time as the match progresses. This allows both teams and spectators to keep up with the current status of the game.<br><br>
+                            Comprehensive Scoreboard: Displays all necessary match statistics, including total runs, wickets, overs, and the current run rate, ensuring that players and scorers can easily follow the game's progress.<br><br>
+                            User-Friendly UI: The scoreboard features a clean and responsive interface, designed using XML, making it easy for anyone to use and follow during the game.<br><br>
+                            <br>
+                            <br>
+                            Technology Stack:
+                            <br>
+                            <br>
+                            Backend:
+                            <br>
+                            <br>
+                            Developed using Kotlin, ensuring robust performance and seamless integration with external weather APIs.
+                            <br>
+                            <br>
+                            Frontend: 
+                            <br>
+                            <br>
+                            The user interface is crafted using XML, following modern design principles for a responsive layout.<br><br><br><br>
+                        </p>
+                            
+                        
+    
+                     </div>
+                </div>
+            </div>
+         </div>
+         <!---typed js for typing text effect-->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+         <script>
+            /** creating button click show hide navbar **/
+            var togglebtn=document.querySelector(".togglebtn");
+            var nav=document.querySelector(".navlinks");
+            var links=document.querySelector(".navlinks li");
+    
+            togglebtn.addEventListener("click", function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            })
+    
+            var typed=new Typed(".input",{
+                strings:[" WebToApp"," WeatherWave"," Tax Trek"],
+                typedSpeed:65,
+                backSpeed:55,
+                loop:true
+            })
+    
+         </script>
+    </body>
+    </html>
